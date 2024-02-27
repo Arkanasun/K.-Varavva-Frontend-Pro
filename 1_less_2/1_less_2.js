@@ -1,4 +1,3 @@
-const ours = +prompt(`Введите количество часов`)
-alert(ours*60)
+const hours = +prompt(`Введите количество часов`)
+alert(hours*60)
 
-s
