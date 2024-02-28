@@ -1,3 +1,4 @@
 const hours = +prompt(`Введите количество часов`)
-alert(hours*60)
+const seconds = Number(hours*3600)
+alert(seconds)
 
