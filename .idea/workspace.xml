@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a124bc16-1993-4f98-85ca-464d7561e518" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_less/2_less.js" beforeDir="false" afterPath="$PROJECT_DIR$/2_less/2_less.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +21,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -65,7 +67,15 @@
       <workItem from="1709480806303" duration="12417000" />
       <workItem from="1709560767841" duration="8732000" />
       <workItem from="1709584744974" duration="610000" />
-      <workItem from="1709627257229" duration="1076000" />
+      <workItem from="1709627257229" duration="1938000" />
+      <workItem from="1709657992202" duration="4151000" />
+      <workItem from="1709713840205" duration="5634000" />
+      <workItem from="1709734517329" duration="4889000" />
+      <workItem from="1709740633904" duration="411000" />
+      <workItem from="1709754287958" duration="2094000" />
+      <workItem from="1709756730525" duration="2689000" />
+      <workItem from="1709823901464" duration="1513000" />
+      <workItem from="1709832318747" duration="9537000" />
     </task>
     <servers />
   </component>
