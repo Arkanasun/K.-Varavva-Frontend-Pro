@@ -1,46 +1,41 @@
- let string=""
- for( let i=20; i<=30; i+=0.5){
-     string += i===20 ? `${i}` : ` ${i}`
-}
- console.log(string);
+const age = +prompt(`Введите год своего рождения`);
+console.log(`Вам ${2024 - age} лет`);
 
+let town;
+let city = prompt(`В каком городе Вы живёте?`);
+if (!city)
+    alert(`Жаль, что вы не захотели ввести свой город`);
 
- let d = 27;
- for (let k = 10; k<=100; k+=10 ){
-     console.log(d*k);
- }
-
-
- let N = prompt('Please enter a whole number');
- for(let l=1; l<=100; l++){
-    if (l**2 < N)
- {
-        console.log(l);
-   }
+if (city === `Киев`) {
+    town = ("Вы живёте в столице Украины");
+} else if (city === `Лондон`) {
+    town = ("Вы живёте в столице Великобритании");
+} else if (city === `Вашингтон`) {
+    town = ("Вы живёте в столице США");
+} else {
+    town = (`Вы живёте в городе ${city}`);
 }
 
 
+if (!sport)
+    alert(`Жаль, что вы не захотели ввести свой любимый вид спорта`);
 
- function primeNumb(num) {
-     if (num > 1) {
-         for (let i = 2; i < num; i++) {
-             if (num % i == 0) {
-                 return "Составное число";
-             }
-         }
-         return "Простое число";
-     } else {
-         return "Число должно быть больше 1";
-     }
- }
-console.log(primeNumb(200));
+let message;
+let sport = prompt(`Какой ваш любимый вид спорта?`);
+switch (sport) {
+    case `Фигурное катание`:
+        message = (`Круто! Хочешь быть как Каори Сакамото?`);
+        break
+    case `Снукер`:
+        message = (`Круто! Хочешь быть как Люка Брессель?`);
+        break
+    case `Скалолазание`:
+        message = (`Круто! Хочешь быть как Даниил Болдырев?`);
+        break
+}
 
-
-
-const userNumber = prompt(`Please enter a whole number`)
-let isPossible = false;
-for(let i =1; i < userNumber; i++) {
-    if (3**i == userNumber) isPossible = true;
-}console.log(isPossible);
-
-
+alert(`
+    Вам ${2024 - age} лет
+    ${town}
+    ${message}`
+)
