@@ -55,16 +55,16 @@ let users = [
         "address": "314 Dunne Place, Bawcomville, Guam, 9053"
     }
 ]
+
+
  let phones = users.map(user => {
      if (user.balance > 2000)
          return user.phone
  })
 console.log(phones);
 
-// let sum = users.filter((user) => {
-//     return balance
-// })
-// sum += balance;
-// console.log(sum)
 
-
+let sum = users.reduce((acc, user) => {
+    return (acc + +user.balance*100)
+},0);
+console.log(sum/100);
