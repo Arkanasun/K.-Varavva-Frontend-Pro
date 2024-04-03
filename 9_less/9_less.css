@@ -1,0 +1,16 @@
+#first {
+    display: none;
+    color: purple;
+    background-color: #EBEBEB;
+    max-width: 300px;
+    height: 40px;
+    border-radius: 9999px;
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    padding: 10px 10px;
+}
+
+#elem {
+    position: relative;
+}
