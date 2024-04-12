@@ -1,11 +1,11 @@
 img {
     max-width: 400px;
     max-height: 300px;
-    transform: translateY(-10%);
     top: 60px;
     position: relative;
     margin-left: 50px;
     margin-bottom: 100px;
+    transform: translateY(-10%);
 
 }
 
