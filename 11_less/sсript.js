@@ -7,13 +7,13 @@ const products = [
 // Функция для отображения товаров
 function displayProducts() {
     const productList = document.querySelector('.product-list');
-    productList.innerHTML = ''; // Очищаем содержимое списка перед добавлением новых товаров
+    productList.innerHTML = '';
 
     products.forEach(product => {
         const productElement = document.createElement('div');
         productElement.classList.add('product');
         productElement.innerHTML = `
-            <img src="${product.image}" alt="${product.name}">
+            <img id="${product.image}" src="${product.image}" alt="${product.name}">
             <h3>${product.name}</h3>
             <p id="price-${product.id}">Price: $${product.price}</p>
             <button class="buy-btn" data-id="${product.id}">Purchase now</button>

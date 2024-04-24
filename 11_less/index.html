@@ -1,37 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internet Shop</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 <header class="header">
     <h1>Welcome to online shopping!</h1>
 </header>
-<div class="product-list">
-    <div class="product">
-        <img class= "productImg" src="https://upload.wikimedia.org/wikipedia/commons/4/45/IPhone_First_Generation.jpg" alt="Smartphone">
-        <span>iPhone 1</span>
-        <button type="submit">Purchase now</button>
-    </div>
-    <div class="product">
-        <img  class= "productImg" src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Nikon_F6_face.jpg" alt="Camera">
-        <span>Nikon F6</span>
-        <button type="submit">Purchase now</button>
-    </div>
-    <div class="product">
-        <img  class= "productImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Schenker_VIA14_Laptop_asv2021-01.jpg/1365px-Schenker_VIA14_Laptop_asv2021-01.jpg" alt="Notebook">
-        <span>Schenker VIA14 Laptop</span>
-        <button type="submit">Purchase now</button>
+<div class="container">
+    <div class="product-list">
+        <div class="product" id="productName1">
+            <img id="product_img1" src="https://upload.wikimedia.org/wikipedia/commons/4/45/IPhone_First_Generation.jpg" alt="Smartphone">
+            <span id="name">iPhone 1</span>
+            <p class="price" id="productPrice1">60$</p>
+            <button class="buy-btn" data-id="1" type="submit">Purchase now</button>
+        </div>
+        <div class="product" id="productName2">
+            <img class="product_img2" src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Nikon_F6_face.jpg" alt="Camera">
+            <span id="name2">Nikon F6</span>
+            <p class="price" id="productPrice2">75$</p>
+            <button class="buy-btn" data-id="2"  type="submit">Purchase now</button>
+        </div>
+        <div class="product" id="productName3">
+            <img class="product_img3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Schenker_VIA14_Laptop_asv2021-01.jpg/1365px-Schenker_VIA14_Laptop_asv2021-01.jpg" alt="Notebook">
+            <span id="name3">Schenker VIA14</span>
+            <p class="price" id="productPrice3">90$</p>
+            <button class="buy-btn" data-id="3"  type="submit">Purchase now</button>
+        </div>
     </div>
 </div>
-<script src="scripts.js"></script>
+    <div class="order-form hidden">
+        <h2>Order Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <select id="city" required>
+                    <option value="">Select a city</option>
+                    <option id="city1" >Kyiv</option>
+                    <option id="city2" >Kharkiv</option>
+                    <option id="city3" value="">Lviv</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="delivery">Delivery:</label>
+                <input type="text" id="delivery" placeholder="Nova Poshta" required>
+            </div>
+            <div class="form-group">
+                <label for="payment">Payment:</label>
+                <select id="payment" required>
+                    <option value="">Select a payment method</option>
+                    <option value="cash-on-delivery">Cash on delivery</option>
+                    <option value="card">Card payment</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea id="comment"></textarea>
+            </div>
+            <button type="submit" class="btn">Place Order</button>
+        </form>
+    </div>
+    <div class="order-info hidden">
+        <h2>Order Information</h2>
+        <div class="order-details"></div>
+    </div>
+
+<script src="sсript.js"></script>
 </body>
 </html>

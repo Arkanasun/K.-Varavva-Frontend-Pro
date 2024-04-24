@@ -15,15 +15,9 @@ h1, h2 {
 }
 
 
-.product {
-    border: 1px solid #ccc;
-    padding: 20px;
-    text-align: center;
-}
-
-.product_img {
-    max-width: 100px;
-    max-height: 100px;
+.product img{
+    max-width: 200px;
+    max-height: 200px;
 }
 
 .order-form, .order-info {
