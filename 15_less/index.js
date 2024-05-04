@@ -1,33 +1,42 @@
 class Building {
-    constructor(name, flatQuantity) {
-        this.name = name;
+    constructor(maxFlats) {
         this.flats = [];
+        maxFlats = 9;
         let i = 0;
-        while (i < flatQuantity) {
+        while (i < maxFlats) {
             i++;
             this.flats.push(new Flat(i));
+        }
+    }
+
+    addFlat(flat) {
+        if (flat instanceof Flat) {
+            this.flats.push(flat);
         }
     }
 }
 
 class Flat {
-    constructor(number) {
-        this.number = number;
-        this.rooms = 4;
+    constructor(residents) {
         this.residents = [];
     }
-
     addResident(person) {
-        this.residents.push(person);
+        if (person instanceof Person) {
+            this.residents.push(person);
+        } else {
+            alert('Error')
+        }
     }
 }
 
-function Person(name, gender) {
-    this.name = name;
-    this.gender = gender;
+class Person {
+    constructor(name, gender) {
+        this.name = name;
+        this.gender = gender;
+    }
 }
 
-const newBuilding = new Building('Sun', 20);
+const newBuilding = new Building();
 const person = new Person('Eren', 'male');
 const person2 = new Person('Armin', 'male');
 const person3 = new Person('Annie', 'female');
@@ -40,5 +49,4 @@ flat2.addResident(person2);
 flat3.addResident(person3);
 
 const flatResidents = newBuilding.flats.flatMap(flat => flat.residents);
-
 console.log(newBuilding);
