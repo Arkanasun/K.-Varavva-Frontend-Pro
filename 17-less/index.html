@@ -1,17 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+
 </head>
 <body>
-<div>
-    <button type="submit" class="button">Press me</button>
+<div id="weather-info">
+    <p><strong>Temperature:</strong> <span id="temp"></span> °C</p>
+    <p><strong>Pressure:</strong> <span id="pressure"></span> hPa</p>
+    <p><strong>Description:</strong> <span id="description"></span></p>
+    <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+    <p><strong>Wind Speed:</strong> <span id="speed"></span> m/s</p>
+    <p><strong>Wind Direction:</strong> <span id="deg"></span>°</p>
+    <img id="icon" src="" alt="Weather Icon">
 </div>
-<script src="index.js"></script>
+<script src="script.js"></script>
 </body>
-</html>
+</html>>
